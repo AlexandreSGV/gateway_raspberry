@@ -17,7 +17,7 @@ app.post('/raspberry/api/temperatures/', function (req, res) {
   console.log(ip, " enviou thermometer_id = " , thermometer_id  , " e  value = ", value ); 
 
   //enviando request ao Laravel
-  axios.post('http://192.168.15.8:8000/api/temperatures/', {
+  axios.post('http://10.35.3.62:8000/api/temperatures/', {
     thermometer_id: thermometer_id,
     value: value 
   })
@@ -43,7 +43,7 @@ app.post('/raspberry/api/luminosities/', function (req, res) {
   console.log(ip, " enviou sensor_id = " , sensor_id  , " e  value = ", value ); 
 
   //enviando request ao Laravel
-  axios.post('http://192.168.15.8:8000/api/luminosities/', {
+  axios.post('http://10.35.3.62:8000/api/luminosities/', {
     sensor_id: sensor_id,
     value: value 
   })
